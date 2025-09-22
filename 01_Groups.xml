@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Group Smoke Test ">
+        <groups>
+            <run>
+                <include name="smoke"> </include>
+                <exclude name="regression"> </exclude>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.sda.mentoring.taskes.day01.T02AttributePracticeTest_Henna"> </class>
+            <class name="com.sda.mentoring.taskes.day01.T02AttributePracticeTest_Youmna"> </class>
+        </classes>
+    </test>
+</suite>

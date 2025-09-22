@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Test 1">
+        <parameter name="keyword" value="Java"/>
+        <classes>
+            <class name="com.sda.mentoring.assignments.day02.T01_AmazonSearchTestWithParameters"/>
+        </classes>
+    </test>
+
+    <test name="Test 2">
+        <parameter name="keyword" value="Selenium"/>
+        <classes>
+            <class name="com.sda.mentoring.assignments.day02.T01_AmazonSearchTestWithParameters"/>
+        </classes>
+    </test>
+</suite>
