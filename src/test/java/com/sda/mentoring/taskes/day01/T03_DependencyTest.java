@@ -1,4 +1,4 @@
-package com.sda.mentoring.taskes;
+package com.sda.mentoring.taskes.day01;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
