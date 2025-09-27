@@ -1,4 +1,4 @@
-package com.sda.mentoring.assignments.day01;
+package tests.sda.mentoring.assignments.day01;
 
 
 import org.openqa.selenium.By;

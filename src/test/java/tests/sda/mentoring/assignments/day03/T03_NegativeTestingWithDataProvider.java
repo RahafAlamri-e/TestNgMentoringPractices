@@ -1,4 +1,4 @@
-package com.sda.mentoring.assignments.day03;
+package tests.sda.mentoring.assignments.day03;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;

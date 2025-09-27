@@ -1,4 +1,4 @@
-package com.sda.mentoring.assignments.day02;
+package tests.sda.mentoring.assignments.day02;
 
 import org.testng.annotations.Test;
 import utilities.TestBase;

@@ -1,4 +1,4 @@
-package com.sda.mentoring.taskes.day01;
+package tests.sda.mentoring.taskes.day01;
 
 import org.testng.annotations.Test;
 

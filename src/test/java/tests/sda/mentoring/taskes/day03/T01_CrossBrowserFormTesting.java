@@ -1,4 +1,4 @@
-package com.sda.mentoring.taskes.day03;
+package tests.sda.mentoring.taskes.day03;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
