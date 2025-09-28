@@ -5,9 +5,10 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.NoAlertPresentException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import page.T01Pages.AddContactPage;
-import page.T01Pages.ContactListPage;
-import page.T01Pages.LoginPage;
+
+import tests.sda.mentoring.assignments.day04.T01Pages.AddContactPage;
+import tests.sda.mentoring.assignments.day04.T01Pages.ContactListPage;
+import tests.sda.mentoring.assignments.day04.T01Pages.LoginPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 

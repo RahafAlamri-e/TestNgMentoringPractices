@@ -1,4 +1,4 @@
-package page.T01Pages;
+package tests.sda.mentoring.assignments.day04.T01Pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
