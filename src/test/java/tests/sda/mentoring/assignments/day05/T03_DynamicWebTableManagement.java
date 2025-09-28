@@ -1,11 +1,11 @@
-package tests.sda.mentoring.taskes.day05;
+package tests.sda.mentoring.assignments.day05;
 
 import com.github.javafaker.Faker;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import tests.sda.mentoring.taskes.day05.T03Pages.AddRecordDynamicWebTablePage;
+import tests.sda.mentoring.assignments.day05.T03Pages.AddRecordDynamicWebTablePage;
 import utilities.Driver;
 
 public class T03_DynamicWebTableManagement {

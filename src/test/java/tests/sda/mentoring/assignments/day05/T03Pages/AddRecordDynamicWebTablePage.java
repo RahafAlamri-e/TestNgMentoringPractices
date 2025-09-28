@@ -1,4 +1,4 @@
-package tests.sda.mentoring.taskes.day05.T03Pages;
+package tests.sda.mentoring.assignments.day05.T03Pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
