@@ -26,6 +26,7 @@ public class TransactionPage {
     @FindBy(xpath = "//strong[2]")
     private WebElement balanceLabel;
 
+
     public void deposit(int amount) {
         depositTab.click();
         amountInput.sendKeys(String.valueOf(amount));

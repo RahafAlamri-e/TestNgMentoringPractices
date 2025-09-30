@@ -1,5 +1,6 @@
 package tests.sda.mentoring.assignments.day04.T02Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -50,7 +51,7 @@ public class CustomerManagementPage {
     public void deleteAllCustomers() {
         openCustomersTab();
         while (!customerRows.isEmpty()) {
-            customerRows.get(0).findElement(org.openqa.selenium.By.xpath(".//button[text()='Delete']")).click();
+            customerRows.get(0).findElement(By.xpath(".//button[text()='Delete']")).click();
         }
     }
 }

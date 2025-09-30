@@ -15,7 +15,7 @@ public class ManagerLoginPage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(css = "button[ng-click='manager()']")
+    @FindBy(xpath = "//button[@ng-click='manager()']")
     private WebElement managerLoginBtn;
 
     @FindBy(xpath = "//button[contains(text(),'Home')]")

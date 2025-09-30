@@ -8,6 +8,14 @@ import tests.sda.mentoring.assignments.day04.T02Pages.*;
 import utilities.Driver;
 
 public class T02_BankingTest {
+    /*
+        Test Scenario:
+            1. Open 5 new customer accounts
+            2. Deposit 100 USD to each account
+            3. Withdraw 100 USD from any one account
+            4. Delete all created accounts
+            5. Verify account operations
+     */
 
     ManagerLoginPage managerLoginPage;
     CustomerManagementPage customerManagementPage;
@@ -15,7 +23,6 @@ public class T02_BankingTest {
     CustomerLoginPage customerLoginPage;
     TransactionPage transactionPage;
 
-    // أسماء العملاء
     String[] customers = {"Ali Test", "Sara Test", "Omar Test", "Mona Test", "Khalid Test"};
 
     @BeforeClass
@@ -39,7 +46,7 @@ public class T02_BankingTest {
 
     @Test(priority = 2)
     public void testOpenAccounts() {
-        managerLoginPage.goHome();   // ⬅️ نرجع للصفحة الرئيسية
+        managerLoginPage.goHome();
         managerLoginPage.loginAsManager();
         for (String name : customers) {
             accountManagementPage.createAccount(name, "Dollar");
@@ -51,9 +58,8 @@ public class T02_BankingTest {
         for (String name : customers) {
             customerLoginPage.loginAsCustomer(name);
             transactionPage.deposit(100);
-            Assert.assertEquals(transactionPage.getBalance(), "100",
-                    "❌ Balance not updated correctly for " + name);
-            managerLoginPage.goHome();   // ⬅️ بعد كل تسجيل دخول نرجع Home
+            Assert.assertEquals(transactionPage.getBalance(), "100");
+            managerLoginPage.goHome();
         }
     }
 
@@ -61,9 +67,8 @@ public class T02_BankingTest {
     public void testWithdrawFromOneAccount() {
         customerLoginPage.loginAsCustomer(customers[0]);
         transactionPage.withdraw(100);
-        Assert.assertEquals(transactionPage.getBalance(), "0",
-                "❌ Withdrawal not processed correctly for " + customers[0]);
-        managerLoginPage.goHome();   // ⬅️ نرجع Home بعد العملية
+        Assert.assertEquals(transactionPage.getBalance(), "0");
+        managerLoginPage.goHome();
     }
 
     @Test(priority = 5)

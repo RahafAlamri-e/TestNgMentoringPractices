@@ -15,7 +15,7 @@ public class CustomerLoginPage {
     @FindBy(xpath = "//button[contains(text(),'Home')]")
     private WebElement homeBtn;
 
-    @FindBy(css = "button[ng-click='customer()']")
+    @FindBy(xpath = "//button[@ng-click='customer()']")
     private WebElement customerLoginBtn;
 
     @FindBy(id = "userSelect")
